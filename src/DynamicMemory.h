@@ -5,7 +5,7 @@
 #ifndef C_11_FEATURE_DEMO_DYNAMICMEMORY_H
 #define C_11_FEATURE_DEMO_DYNAMICMEMORY_H
 
-
+#include <memory>
 #include "Thing.h"
 
 class DynamicMemory {
