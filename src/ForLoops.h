@@ -6,6 +6,7 @@
 #define C_11_FEATURE_DEMO_FORLOOPS_H
 
 #include <vector>
+#include "Thing.h"
 
 class ForLoops {
 public:
@@ -15,7 +16,7 @@ public:
     void referenceParameterForLoop();
 
 private:
-    std::vector<int> v{1,2,3,4,5,6,7,8,9};
+    std::vector<Thing> v{Thing("1"),Thing("2"),Thing("3"),Thing("4"),Thing("5"),Thing("6"),Thing("7"),Thing("8"),Thing("9")};
 };
 
 

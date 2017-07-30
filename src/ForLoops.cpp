@@ -3,13 +3,18 @@
 //
 
 #include "ForLoops.h"
-#include <iostream>
+#include <sstream>
 
 void ForLoops::vectorRangeForLoop() {
     std::cout << "Vector-based range for loop" << std::endl;
+    int count = 1;
 
     for(auto i : v)
     {
+        std::stringstream newId;
+        newId << "New ID " << count++;
+        i.setID(newId.str());
+
         std::cout << i << ' ';
     }
     std::cout << std::endl;
