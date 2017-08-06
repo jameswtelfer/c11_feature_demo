@@ -5,7 +5,9 @@
 #ifndef C_11_FEATURE_DEMO_LAMBDAS_H
 #define C_11_FEATURE_DEMO_LAMBDAS_H
 
+#include <string>
 #include <list>
+#include <functional>
 
 
 class Lambdas {

@@ -2,7 +2,6 @@
 // Created by James Telfer on 31/07/2017.
 //
 
-#include <string>
 #include <iostream>
 #include "Lambdas.h"
 
