@@ -5,11 +5,18 @@
 #ifndef C_11_FEATURE_DEMO_LAMBDAS_H
 #define C_11_FEATURE_DEMO_LAMBDAS_H
 
+#include <list>
+
 
 class Lambdas {
 public:
     void lambdasWithNoCaptures();
     void lambdasWithCaptures();
+    void lambdasWithStdAlgorithm();
+    void passingLambdasToFunctions();
+
+private:
+    void printItems(std::function<void(const std::string &)> f, const std::list<std::string> &items) const;
 };
 
 

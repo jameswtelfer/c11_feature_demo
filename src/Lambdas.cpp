@@ -47,3 +47,32 @@ void Lambdas::lambdasWithCaptures() {
     std::cout << "\t" << message << std::endl;
     std::cout << "\t" << baseValue << std::endl;
 }
+
+void Lambdas::lambdasWithStdAlgorithm() {
+    std::list<std::string> stringList{"First", "Second", "Third", "Last"};
+
+    auto printStringItem = [](const std::string& item){
+        std::cout << "Item value: " << item << std::endl;
+    };
+
+    std::cout << "Items in list of strings written out via std::for_each() and a lambda:" << std::endl;
+
+    std::for_each(stringList.begin(), stringList.end(), printStringItem);
+
+}
+
+void Lambdas::printItems(std::function<void(const std::string &)> f, const std::list<std::string> &items) const {
+    std::cout << "Items in list of strings written out via passed function object" << std::endl;
+
+    std::for_each(items.begin(), items.end(), std::move(f));
+}
+
+void Lambdas::passingLambdasToFunctions() {
+    std::list<std::string> stringList{"First", "Second", "Third", "Last"};
+
+    auto printStringItem = [](const std::string& item){
+        std::cout << "Item value: " << item << std::endl;
+    };
+
+    printItems(printStringItem, stringList);
+}

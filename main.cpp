@@ -18,6 +18,8 @@ int main(int argc, const char * argv[]) {
     Lambdas lambdas;
     lambdas.lambdasWithNoCaptures();
     lambdas.lambdasWithCaptures();
+    lambdas.lambdasWithStdAlgorithm();
+    lambdas.passingLambdasToFunctions();
 
     return 0;
 }
