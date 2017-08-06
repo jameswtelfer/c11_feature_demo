@@ -3,3 +3,4 @@ compiler: clang
 script:
   - cmake .
   - make
+  - c__11_feature_demo
