@@ -2,6 +2,7 @@
 #include "src/ForLoops.h"
 #include "src/DynamicMemory.h"
 #include "src/Lambdas.h"
+#include "src/NullPtr.h"
 
 int main(int argc, const char * argv[]) {
     ForLoops forLoops;
@@ -20,6 +21,9 @@ int main(int argc, const char * argv[]) {
     lambdas.lambdasWithCaptures();
     lambdas.lambdasWithStdAlgorithm();
     lambdas.passingLambdasToFunctions();
+
+    NullPtr nulls;
+    nulls.compareNullptrToNull();
 
     return 0;
 }
